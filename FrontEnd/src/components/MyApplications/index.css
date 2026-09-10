@@ -1,0 +1,74 @@
+.my-applications-page {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+}
+
+.applications-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.applications-container h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.applications-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.application-card {
+  background-color: #1e293b;
+  padding: 25px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+}
+
+.application-card h2 {
+  margin: 0 0 15px;
+  font-size: 22px;
+}
+
+.application-card p {
+  color: #cbd5e1;
+  margin: 8px 0;
+}
+
+.status {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #16a34a;
+  color: white;
+  font-size: 14px;
+}
+
+.view-job-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.view-job-button:hover {
+  background-color: #1d4ed8;
+}
+
+.no-applications {
+  text-align: center;
+  padding: 40px;
+  background-color: #1e293b;
+  border-radius: 10px;
+}
+
+.no-applications p {
+  color: #cbd5e1;
+}

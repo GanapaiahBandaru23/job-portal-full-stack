@@ -1,0 +1,204 @@
+/* =========================
+   APPLICATION OVERLAY
+========================= */
+
+.application-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+
+/* =========================
+   APPLICATION CARD
+========================= */
+
+.application-card {
+  width: 90%;
+  max-width: 430px;
+
+  background-color: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 35px 30px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+
+  animation: cardAppear 0.25s ease;
+}
+
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background-color: #dcfce7;
+
+  color: #16a34a;
+
+  font-size: 42px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   ALREADY APPLIED ICON
+========================= */
+
+.already-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background-color: #fef3c7;
+
+  color: #d97706;
+
+  font-size: 38px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   ERROR ICON
+========================= */
+
+.error-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background-color: #fee2e2;
+
+  color: #dc2626;
+
+  font-size: 42px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.application-card h2 {
+  color: #0f172a;
+
+  font-size: 24px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.application-card p {
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   BACK HOME BUTTON
+========================= */
+
+.back-home-button {
+  width: 100%;
+
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.back-home-button:hover {
+  background-color: #1d4ed8;
+}
+
+.apply-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #1d4ed8;
+}

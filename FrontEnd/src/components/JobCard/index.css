@@ -1,0 +1,192 @@
+.job-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  list-style-type: none;
+
+  transition: 0.2s;
+}
+
+
+.job-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Job Header */
+
+.job-header {
+  margin-bottom: 18px;
+}
+
+
+.job-title {
+  margin: 0 0 8px;
+
+  color: #1e293b;
+
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+
+.company-name {
+  margin: 0;
+
+  color: #2563eb;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+/* Job Information */
+
+.job-info {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+
+.job-info p {
+  margin: 0;
+
+  padding: 7px 10px;
+
+  background-color: #f1f5f9;
+
+  border-radius: 5px;
+
+  color: #475569;
+
+  font-size: 13px;
+}
+
+
+/* Description */
+
+.job-description {
+  border-top: 1px solid #e2e8f0;
+
+  padding-top: 16px;
+
+  margin-bottom: 20px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.job-description h3 {
+  margin-top: 0;
+
+  margin-bottom: 10px;
+
+  color: #1e293b;
+
+  font-size: 16px;
+}
+
+
+.job-description p {
+  margin: 5px 0;
+}
+
+
+.job-description ul {
+  padding-left: 20px;
+}
+
+
+/* Apply */
+
+.apply-container {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+
+.apply-link {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+
+.apply-link:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+  .job-card {
+    padding: 18px;
+  }
+
+
+  .job-title {
+    font-size: 18px;
+  }
+
+
+  .job-info {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+
+  .job-info p {
+    width: fit-content;
+  }
+
+
+  .apply-container {
+    justify-content: stretch;
+  }
+
+
+  .apply-link {
+    width: 100%;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+}
+.job-card {
+  cursor: pointer;
+}
