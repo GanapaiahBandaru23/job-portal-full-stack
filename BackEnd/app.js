@@ -23,8 +23,9 @@ const db = mysql.createConnection({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   ssl: {
-    ca: fs.readFileSync('C:/Users/ganap/Downloads/isrgrootx1.pem'),
+    ca: fs.readFileSync('./isrgrootx1.pem'),
   },
+
 })
 
 
