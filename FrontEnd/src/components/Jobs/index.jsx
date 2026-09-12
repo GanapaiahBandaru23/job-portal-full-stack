@@ -27,7 +27,7 @@ const Jobs = () => {
     setIsError(false)
 
     try {
-      const response = await fetch('http://localhost:3000/jobs')
+      const response = await fetch('https://job-portal-full-stack-vxtg.onrender.com/jobs')
 
       if (!response.ok) {
         throw new Error('Failed to fetch jobs')

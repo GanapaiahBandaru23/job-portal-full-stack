@@ -22,7 +22,7 @@ const MyApplications = () => {
       const token = Cookies.get('jwt_token')
 
       const response = await fetch(
-        'http://localhost:3000/applications',
+        'https://job-portal-full-stack-vxtg.onrender.com/applications',
         {
           headers: {
             Authorization: `Bearer ${token}`,

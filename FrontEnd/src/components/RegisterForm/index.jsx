@@ -120,7 +120,7 @@ const RegisterForm = () => {
       try {
 
         const response = await fetch(
-          'http://localhost:3000/register',
+          'https://job-portal-full-stack-vxtg.onrender.com/register',
           {
             method: 'POST',
 

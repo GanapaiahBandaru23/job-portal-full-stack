@@ -27,7 +27,7 @@ const JobDetails = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/jobs/${id}`
+        `https://job-portal-full-stack-vxtg.onrender.com/jobs/${id}`
       )
 
       if (!response.ok) {
@@ -52,7 +52,7 @@ const JobDetails = () => {
       const token = Cookies.get('jwt_token')
 
       const response = await fetch(
-        'http://localhost:3000/applications',
+        'https://job-portal-full-stack-vxtg.onrender.com/applications',
         {
           method: 'POST',
 
