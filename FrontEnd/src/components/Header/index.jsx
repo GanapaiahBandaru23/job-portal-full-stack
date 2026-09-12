@@ -1,6 +1,6 @@
 
 import {Link, useNavigate} from 'react-router-dom'
-import {AiFillHome} from 'react-icons/ai'
+import {AiFillHome, AiOutlinePropertySafety} from 'react-icons/ai'
 import {BsFillBriefcaseFill} from 'react-icons/bs'
 import {FiLogOut} from 'react-icons/fi'
 import Cookies from 'js-cookie'

@@ -31,14 +31,20 @@ const MyApplications = () => {
       )
 
       if (!response.ok) {
-        throw new Error('Failed to fetch applications')
+        throw new Error(
+          'Failed to fetch applications',
+        )
       }
 
       const data = await response.json()
 
       setApplications(data)
     } catch (error) {
-      console.log('APPLICATIONS ERROR:', error)
+      console.log(
+        'APPLICATIONS ERROR:',
+        error,
+      )
+
       setIsError(true)
     } finally {
       setIsLoading(false)
@@ -48,11 +54,13 @@ const MyApplications = () => {
   if (isLoading) {
     return (
       <div className="my-applications-page">
+
         <Header />
 
         <div className="applications-container">
           <p>Loading...</p>
         </div>
+
       </div>
     )
   }
@@ -60,27 +68,58 @@ const MyApplications = () => {
   if (isError) {
     return (
       <div className="my-applications-page">
+
         <Header />
 
         <div className="applications-container">
+
           <h1>My Applications</h1>
-          <p>Something went wrong.</p>
+
+          <div className="no-applications">
+
+            <h2>
+              Something Went Wrong
+            </h2>
+
+            <p>
+              We could not fetch your
+              applications.
+            </p>
+
+            <button
+              type="button"
+              className="view-job-button"
+              onClick={getApplications}
+            >
+              Retry
+            </button>
+
+          </div>
+
         </div>
+
       </div>
     )
   }
 
   return (
     <div className="my-applications-page">
+
       <Header />
 
       <div className="applications-container">
 
-        <h1>My Applications</h1>
+        <h1>
+          My Applications
+        </h1>
 
         {applications.length === 0 ? (
+
           <div className="no-applications">
-            <h2>No Applications Yet</h2>
+
+            <h2>
+              No Applications Yet
+            </h2>
 
             <p>
               You haven't applied for any jobs.
@@ -93,8 +132,11 @@ const MyApplications = () => {
             >
               Find Jobs
             </button>
+
           </div>
+
         ) : (
+
           <ul className="applications-list">
 
             {applications.map(application => (
@@ -134,8 +176,9 @@ const MyApplications = () => {
 
                 <p>
                   📅 Applied on:{' '}
+
                   {new Date(
-                    application.applied_at
+                    application.applied_at,
                   ).toLocaleDateString()}
                 </p>
 
@@ -152,7 +195,7 @@ const MyApplications = () => {
                   className="view-job-button"
                   onClick={() =>
                     navigate(
-                      `/jobs/${application.job_id}`
+                      `/jobs/${application.job_id}`,
                     )
                   }
                 >
@@ -164,9 +207,11 @@ const MyApplications = () => {
             ))}
 
           </ul>
+
         )}
 
       </div>
+
     </div>
   )
 }
